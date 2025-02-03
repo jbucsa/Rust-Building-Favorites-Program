@@ -9,7 +9,7 @@ pub mod favorites{
     use super ::*;
 
     pub fn set_favorites()-> Return <()>{
-        // Body
+        msg!("Greeting Macro!!!", context.program.id);
     }
 }
 
