@@ -28,6 +28,7 @@ pub struct Favorites {
     pub hobbies: Vec<Strings>,
 }
 
+#[derive(Accounts)]
 pub struct SetFavorites<'info>{
     #[account(mut)]
     pub user: Signer<'info>
