@@ -9,7 +9,7 @@ pub const ANCHOR_DISCRIMINATION_SIZE: usize = 8;
 pub mod favorites{
     use super ::*;
 
-    pub fn set_favorites(context: Context<SetFavorites>, number: u64, color: String, hobbies: Vec<Strings>)-> Return <()>{
+    pub fn set_favorites(context: Context<SetFavorites>, number: u64, color: String, hobbies: Vec<Strings>)-> Result <()>{
         msg!("Greeting Macro!!!", context.program.id);
         let user_public_key = context.accounts.user.key();
 
